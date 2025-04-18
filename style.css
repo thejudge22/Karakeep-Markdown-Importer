@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.config-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="password"],
+input[type="file"] {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="file"] {
+    padding: 5px; /* Slightly less padding for file input */
+}
+
+small {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 3px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#logOutput {
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word; /* Break long words */
+    font-family: monospace;
+    font-size: 0.9em;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #bbb;
+}
+.log-entry:last-child {
+    border-bottom: none;
+}
+
+.log-error {
+    color: #d9534f; /* Bootstrap danger color */
+    font-weight: bold;
+}

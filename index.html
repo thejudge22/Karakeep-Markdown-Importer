@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to Karakeep Importer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Markdown to Karakeep Importer</h1>
+
+    <div class="config-section">
+        <h2>Configuration</h2>
+        <div class="form-group">
+            <label for="karakeepUrl">Karakeep API URL:</label>
+            <input type="url" id="karakeepUrl" required placeholder="http://localhost:3000/api/v1" value="http://localhost:3000/api/v1">
+        </div>
+        <div class="form-group">
+            <label for="karakeepApiKey">Karakeep API Key:</label>
+            <input type="password" id="karakeepApiKey" required placeholder="ak1_...">
+             <small>Your API key stays in your browser and is only sent directly to your Karakeep instance.</small>
+        </div>
+        <div class="form-group">
+            <label for="markdownFiles">Markdown Files (.md):</label>
+            <input type="file" id="markdownFiles" accept=".md" required multiple>
+             <small>Select one or more Markdown files to import.</small>
+        </div>
+    </div>
+
+    <button id="startButton">Start Import</button>
+
+    <h2>Log Output</h2>
+    <pre id="logOutput">Logs will appear here...</pre>
+
+    <script src="importer.js" defer></script>
+</body>
+</html>
