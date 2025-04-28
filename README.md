@@ -37,4 +37,4 @@ This is a simple client-side tool built with HTML, CSS, and vanilla JavaScript. 
 
 ## License
 
-[Specify your license here, e.g., MIT License]
+MIT License
