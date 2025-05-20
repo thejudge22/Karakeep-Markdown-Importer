@@ -8,6 +8,7 @@ A simple web-based tool to import multiple Markdown files into your Karakeep ins
 *   **Automatic Title:** Uses the filename (without extension) as the Karakeep bookmark title.
 *   **Content Import:** Imports the full Markdown content into the Karakeep bookmark's text field.
 *   **Local Processing:** Runs entirely in your browser; your API key and file contents are sent directly to your Karakeep instance and are not stored elsewhere.
+*   **Local Storage:** The Karakeep API URL and API Key are stored in your browser's local storage for quick access on subsequent uses.
 *   **Basic Logging:** Provides feedback on the import process directly in the browser.
 
 ## How to Use

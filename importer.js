@@ -12,6 +12,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Event Listener ---
     startButton.addEventListener('click', startImportProcess);
 
+    // Load stored values from localStorage
+    function loadStoredValues() {
+        const storedUrl = localStorage.getItem('karakeepUrl');
+        const storedApiKey = localStorage.getItem('karakeepApiKey');
+
+        if (storedUrl) {
+            karakeepUrlInput.value = storedUrl;
+        }
+
+        if (storedApiKey) {
+            karakeepApiKeyInput.value = storedApiKey;
+        }
+    }
+
+    // Store API key and URL in local storage when they change
+    karakeepUrlInput.addEventListener('input', () => {
+        localStorage.setItem('karakeepUrl', karakeepUrlInput.value.trim());
+    });
+
+    karakeepApiKeyInput.addEventListener('input', () => {
+        localStorage.setItem('karakeepApiKey', karakeepApiKeyInput.value.trim());
+    });
+
+    // Load stored values when the page loads
+    loadStoredValues();
+
     // --- Helper Functions ---
 
     /**
